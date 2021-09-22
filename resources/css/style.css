@@ -1,0 +1,19 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://images2.alphacoders.com/631/631997.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    min-height: 100vh;
+}
+
+#mainbox {
+    background-color: white;
+}

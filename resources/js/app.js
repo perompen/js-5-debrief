@@ -7,3 +7,22 @@
 // 5. A button named 'Clear' that removes the populated list from the screen
 // 6. The application should be designed to be visually pleasing. 
 // Note: Do not spend too much time on design. Focus primarily on functionality(i.e. steps 1-5).
+
+function clearBox() {
+    document.getElementById('placeholder').innerHTML = '';
+}
+
+function generator() {
+    clearBox();
+    for (let i = 0; i < 4; i++) {
+    // name list
+    const classNames = ['Noah', 'Perom', 'Hector', 'Anthony Thomas', 'Anthony Bullock',
+        'Raven', 'Alyssa', 'Martin', 'Iryna', 'Alexandra', 'Kayla', 'D\'Nya'];
+    // generate name
+    const name = classNames[Math.floor(Math.random() * classNames.length)] 
+    // append to placeholder div
+    const element = document.createElement('div');
+    element.appendChild(document.createTextNode(name));
+    document.getElementById('placeholder').appendChild(element);
+    }
+}
